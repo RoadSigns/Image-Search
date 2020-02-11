@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace App\Http\Requests;
 
@@ -25,8 +26,8 @@ class SearchRequest extends FormRequest
     {
         return [
             'search' => 'required',
-            'displayed' => 'max:20',
-            'pulled' => 'max:25'
+            'display' => 'max:60',
+            'total' => 'max:60'
         ];
     }
 }
