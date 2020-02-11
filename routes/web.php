@@ -13,4 +13,4 @@ declare(strict_types=1);
 */
 
 Route::get('/', 'SearchController@index')->name('index');
-Route::post('/', 'SearchController@search')->name('search');
+Route::get('/search', 'SearchController@search')->name('search');
